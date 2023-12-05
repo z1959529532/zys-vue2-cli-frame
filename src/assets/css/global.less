@@ -1,0 +1,603 @@
+//less 全局变量
+//@bg-color: rgba(49, 59, 74, 0.9);
+@bg-color: rgba(30,74,73,0.7);
+@bg2-color: rgb(30,74,73);
+@nav-color: #637D96;
+@border-color: rgba(201, 214, 228, 0.7);
+@close-color: #792421;
+@button-color: #4D688E;
+@tree-hover-color: rgb(30,74,73);
+@footer-bg-color: #3C4049;
+@th-color: #1d3d57;
+@input-disabled: rgba(153, 153, 153, 0.2);
+
+@color-666: #666666;
+@color-999: #999999;
+@color-ddd: #DDDDDD;
+@color-fff: #FFFFFF;
+@color-red: #E22018;
+
+////标签样式初始化
+////html,
+////body,
+////#app {
+////    height: 100%;
+////}
+////
+////* {
+////    padding: 0;
+////    margin: 0;
+////    box-sizing: border-box;
+////    -webkit-box-sizing: border-box;
+////    -moz-box-sizing: border-box;
+////    -ms-box-sizing: border-box;
+////}
+//
+//option {
+//    border: none;
+//}
+//
+//a {
+//    text-decoration: none;
+//}
+//
+////button {
+////    border: none;
+////    background-color: @button-color;
+////    border-radius: 5px;
+////    padding: 5px 10px;
+////    color: @color-ddd;
+////    cursor: pointer;
+////}
+//
+//input,
+//select {
+//    width: 100%;
+//    height: 30px;
+//    padding: 0 5px;
+//    border: 1px solid @border-color;
+//    background-color: @bg-color;
+//    border-radius: 5px;
+//    line-height: 30px;
+//    color: @color-ddd;
+//    outline: none;
+//    &::-webkit-input-placeholder {
+//        color: @color-999;
+//    }
+//    &[disabled=disabled] {
+//        background-color: @input-disabled;
+//    }
+//}
+//
+//// 定位
+//.pa {
+//    position: absolute;
+//}
+//
+//.pr {
+//    position: relative;
+//}
+//
+//.pf {
+//    position: fixed;
+//}
+//
+//.show {
+//    display: block;
+//}
+//
+//.hide {
+//    display: none;
+//}
+//
+//.display-flex {
+//    display: flex;
+//    justify-content: space-between;
+//    align-items: center;
+//}
+//
+//.width-100 {
+//    width: 100%;
+//}
+//
+//.height-100 {
+//    height: 100%;
+//}
+//
+////背景色
+//.bg-color {
+//    background-color: @bg-color;
+//}
+//
+////文字相关
+//.text-left {
+//    text-align: left;
+//}
+//
+//.text-center {
+//    text-align: center;
+//}
+//
+//.text-right {
+//    text-align: right;
+//}
+//
+//.cursor-pointer {
+//    cursor: pointer;
+//}
+//
+//.border-radius {
+//    border-radius: 5px;
+//}
+//
+//.font-12 {
+//    font-size: 12px;
+//}
+//
+//.font-14 {
+//    font-size: 14px;
+//}
+//
+//.font-16 {
+//    font-size: 16px;
+//}
+//
+//.font-18 {
+//    font-size: 18px;
+//}
+//
+//.font-20 {
+//    font-size: 20px;
+//}
+//
+//.font-weight {
+//    font-weight: bold;
+//}
+//
+//.user-none {
+//    -webkit-user-select: none;
+//    -moz-user-select: none;
+//    -ms-user-select: none;
+//    user-select: none;
+//}
+//
+////浮动相关
+//.pull-left {
+//    float: left;
+//}
+//
+//.pull-right {
+//    float: right;
+//}
+//
+//.clearfix::after {
+//    content: "";
+//    display: block;
+//    clear: both;
+//}
+//
+//.place-holder::-webkit-input-placeholder {
+//    color: @color-ddd;
+//}
+//
+////自定义滚动条样式
+//.global-scroll {
+//    overflow-y: scroll;
+//}
+//.global-scroll::-webkit-scrollbar {
+//    width: 10px;
+//    height: 10px;
+//    background-color: @color-ddd;
+//    border-radius: 5px;
+//}
+//.global-scroll::-webkit-scrollbar-track {
+//    width: 10px;
+//    height: 10px;
+//    border-radius: 5px;
+//}
+//.global-scroll::-webkit-scrollbar-thumb {
+//    width: 10px;
+//    height: 10px;
+//    border-radius: 5px;
+//    background-color: @bg2-color;
+//}
+//.global-scroll::-webkit-scrollbar-button {
+//    .hide
+//}
+//
+///******************************* elementUi 全局样式修改 start ********************************************/
+//// 树形结构 tree
+//.el-tree-node__content:hover,
+//.el-tree-node:focus > .el-tree-node__content,
+//.el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
+//    background-color: @bg-color !important;
+//}
+//
+//// 表格 table
+//.el-table .cell {
+//    line-height: 30px !important;
+//}
+//
+//.el-table tbody tr:hover {
+//    background: none !important;
+//}
+//
+//// table 单选背景色
+//.el-table__body tr.current-row > td {
+//    background-color: @bg-color;
+//}
+//
+////滚动条样式
+//.light-theme .el-table__body-wrapper::-webkit-scrollbar {
+//    width: 10px;
+//    height: 10px;
+//    background-color: @color-ddd;
+//    border-radius: 5px;
+//}
+//.light-theme .el-table__body-wrapper::-webkit-scrollbar-track {
+//    width: 10px;
+//    height: 10px;
+//    border-radius: 5px;
+//}
+//.light-theme .el-table__body-wrapper::-webkit-scrollbar-thumb {
+//    width: 10px;
+//    height: 10px;
+//    border-radius: 5px;
+//    background-color: @bg2-color;
+//}
+//.light-theme .el-table__body-wrapper::-webkit-scrollbar-button {
+//    display: none;
+//}
+//
+///******************************* elementUi 全局样式修改 end ********************************************/
+//
+///*******************************flex布局********************************************/
+//.zh-flex {
+//    display: flex !important;
+//    display: -webkit-flex !important;
+//}
+//
+////flex布局 水平 两端对齐
+//.zh-flex-space-between {
+//    .zh-flex;
+//    justify-content: space-between !important;
+//}
+//
+////flex水平 居中排列
+//.zh-flex-center-v {
+//    .zh-flex;
+//    align-items: center !important;
+//}
+//
+////flex水平 居中对齐
+//.zh-flex-center-h {
+//    .zh-flex;
+//    justify-content: center !important;
+//}
+//
+////flex布局 水平 居右
+//.zh-flex-end {
+//    .zh-flex;
+//    justify-content: flex-end;
+//}
+//
+////flex布局的子项 weight:1 等分空间
+//.zh-mixin-flex-item-weight(@n:1) {
+//    flex-grow: @n !important;
+//    flex-basis: 0 !important;
+//}
+//
+////flex布局的子项 weight:1 等分空间
+//.zh-flex-item-weight-1 {
+//    .zh-mixin-flex-item-weight(1)
+//}
+//
+////flex布局的子项 weight:2
+//.zh-flex-item-weight-2 {
+//    .zh-mixin-flex-item-weight(2)
+//}
+//
+////flex布局的子项 weight:3
+//.zh-flex-item-weight-3 {
+//    .zh-mixin-flex-item-weight(3)
+//}
+//
+////flex布局的子项 weight:4
+//.zh-flex-item-weight-4 {
+//    .zh-mixin-flex-item-weight(4)
+//}
+//
+////flex布局的子项 weight:5
+//.zh-flex-item-weight-5 {
+//    .zh-mixin-flex-item-weight(5)
+//}
+//
+////flex布局的子项 weight:6
+//.zh-flex-item-weight-6 {
+//    .zh-mixin-flex-item-weight(6)
+//}
+//
+///*******************************space style********************************************/
+//@zh-margin: 10px;
+//@zh-margin-small: 8px;
+//@zh-margin-mid: 5px;
+//@zh-margin-big: 12px;
+//@zh-margin-large: 15px;
+//@zh-margin-big-large: 20px;
+//
+//:root {
+//    --zh-margin: @zh-margin;
+//    --zh-margin-small: @zh-margin-small;
+//    --zh-margin-mid: @zh-margin-mid;
+//    --zh-margin-big: @zh-margin-big;
+//    --zh-margin-large: @zh-margin-large;
+//    --zh-margin-big-large: @zh-margin-big-large;
+//}
+//
+///////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////  margin  //////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+//
+//.zh-margin-top {
+//    margin-top: var(--zh-margin) !important;
+//}
+//
+//.zh-margin-top-small {
+//    margin-top: var(--zh-margin-small) !important;
+//}
+//
+//.zh-margin-top-mid {
+//    margin-top: var(--zh-margin-mid) !important;
+//}
+//
+//.zh-margin-top-big {
+//    margin-top: var(--zh-margin-big) !important;
+//}
+//
+//.zh-margin-top-large {
+//    margin-top: var(--zh-margin-large) !important;
+//}
+//
+//.zh-margin-bottom {
+//    margin-bottom: var(--zh-margin) !important;
+//}
+//
+//.zh-margin-bottom-small {
+//    margin-bottom: var(--zh-margin-small) !important;
+//}
+//
+//.zh-margin-bottom-mid {
+//    margin-bottom: var(--zh-margin-mid) !important;
+//}
+//
+//.zh-margin-bottom-big {
+//    margin-bottom: var(--zh-margin-big) !important;
+//}
+//
+//.zh-margin-bottom-large {
+//    margin-bottom: var(--zh-margin-large) !important;
+//}
+//
+//.zh-margin-bottom-veryBig {
+//    margin-bottom: var(--zh-margin-big-large) !important;
+//}
+//
+//.zh-margin-top-bottom {
+//    margin-top: var(--zh-margin) !important;
+//    margin-bottom: var(--zh-margin) !important;
+//}
+//
+//.zh-margin-top-bottom-small {
+//    margin-top: var(--zh-margin-small) !important;
+//    margin-bottom: var(--zh-margin-small) !important;
+//}
+//
+//.zh-margin-top-bottom-mid {
+//    margin-top: var(--zh-margin-mid) !important;
+//    margin-bottom: var(--zh-margin-mid) !important;
+//}
+//
+//.zh-margin-top-bottom-big {
+//    margin-top: var(--zh-margin-big) !important;
+//    margin-bottom: var(--zh-margin-big) !important;
+//}
+//
+//.zh-margin-top-bottom-large {
+//    margin-top: var(--zh-margin-large) !important;
+//    margin-bottom: var(--zh-margin-large) !important;
+//}
+//
+//.zh-margin-left {
+//    margin-left: var(--zh-margin) !important;
+//}
+//
+//.zh-margin-left-small {
+//    margin-left: var(--zh-margin-small) !important;
+//}
+//
+//.zh-margin-left-mid {
+//    margin-left: var(--zh-margin-mid) !important;
+//}
+//
+//.zh-margin-left-big {
+//    margin-left: var(--zh-margin-big) !important;
+//}
+//
+//.zh-margin-left-large {
+//    margin-left: var(--zh-margin-large) !important;
+//}
+//
+//.zh-margin-right {
+//    margin-right: var(--zh-margin) !important;
+//}
+//
+//.zh-margin-right-small {
+//    margin-right: var(--zh-margin-small) !important;
+//}
+//
+//.zh-margin-right-mid {
+//    margin-right: var(--zh-margin-mid) !important;
+//}
+//
+//.zh-margin-right-big {
+//    margin-right: var(--zh-margin-big) !important;
+//}
+//
+//.zh-margin-right-large {
+//    margin-right: var(--zh-margin-large) !important;
+//}
+//
+///////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////  padding  //////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+//
+//.zh-padding {
+//    padding: var(--zh-margin) !important;
+//}
+//
+//.zh-padding-small {
+//    padding: var(--zh-margin-small) !important;
+//}
+//
+//.zh-padding-mid {
+//    padding: var(--zh-margin-mid) !important;
+//}
+//
+//.zh-padding-big {
+//    padding: var(--zh-margin-big) !important;
+//}
+//
+//.zh-padding-large {
+//    padding: var(--zh-margin-large) !important;
+//}
+//
+//.zh-padding-large-veryBig {
+//    padding: var(--zh-margin-big-large) !important;
+//}
+//
+//.zh-padding-left-right {
+//    padding-left: var(--zh-margin) !important;
+//    padding-right: var(--zh-margin) !important;
+//}
+//
+//.zh-padding-left-right-small {
+//    padding-left: var(--zh-margin-small) !important;
+//    padding-right: var(--zh-margin-small) !important;
+//}
+//
+//.zh-padding-left-right-mid {
+//    padding-left: var(--zh-margin-mid) !important;
+//    padding-right: var(--zh-margin-mid) !important;
+//}
+//
+//.zh-padding-left-right-big {
+//    padding-left: var(--zh-margin-big) !important;
+//    padding-right: var(--zh-margin-big) !important;
+//}
+//
+//.zh-padding-left-right-large {
+//    padding-left: var(--zh-margin-large) !important;
+//    padding-right: var(--zh-margin-large) !important;
+//}
+//
+//
+////过滤条件行
+//.zh-filter {
+//    display: flex !important;
+//    display: -webkit-flex !important;
+//    align-items: center !important;
+//    //margin-top: var(--zh-margin);
+//    //margin-bottom: var(--zh-margin);
+//}
+//
+////过滤条件item-margin
+//.zh-filter-item-margin {
+//    margin-right: var(--zh-margin-small) !important;
+//}
+//
+///*******************************common start********************************************/
+//
+////输入框
+//.zh-input {
+//    width: 200px !important
+//}
+//
+////日期选择框
+//.zh-date-picker {
+//    width: 200px !important
+//}
+//
+////下拉框通用
+//.zh-select {
+//    min-width: 200px !important;
+//}
+//
+////日期时间段选择
+//.zh-date-ranger-picker {
+//    min-width: 330px !important;
+//}
+//
+///*******************************form start********************************************/
+//
+////表单行居中无上边距（用于表单第一行）
+//.zh-form-row-no-top-margin {
+//    display: flex !important;
+//    display: -webkit-flex !important;
+//    align-items: center !important;
+//}
+//
+////表单行居中
+//.zh-form-row {
+//    .zh-form-row-no-top-margin;
+//    margin-top: var(--zh-margin-mid);
+//}
+//
+////表单行没有顶部间距（用于表单第一行）居上
+//.zh-form-row-no-top-margin-align-top {
+//    display: flex !important;
+//    display: -webkit-flex !important;
+//}
+//
+////表单行居上
+//.zh-form-row-align-top {
+//    .zh-form-row-no-top-margin-align-top;
+//    margin-top: var(--zh-margin-mid);
+//}
+//
+////表单key(文字说明)， 提供基本布局，作为基类
+//.zh-form-key,
+//.zh-form-text,
+//.zh-form-text-require {
+//    text-align: right;
+//    flex-grow: 1 !important;
+//    flex-basis: 0 !important;
+//}
+//
+////表单值， 提供基本布局，作为基类
+//.zh-form-value {
+//    flex-grow: 3 !important;
+//    flex-basis: 0 !important;
+//
+//    input[nz-input],
+//    textarea[nz-input],
+//    nz-input-number,
+//    nz-tree-select,
+//    nz-cascader,
+//    nz-time-picker,
+//    nz-date-picker,
+//    nz-month-picker,
+//    nz-range-picker,
+//    nz-week-picker,
+//    nz-year-picker,
+//    nz-input-group,
+//    nz-select {
+//        width: 100%;
+//        max-width: 100%;
+//    }
+//}
+//
+////elementui 样式复写
+//.el-tree-node__content:hover,
+//.light-theme .el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+//    background-color: @tree-hover-color;
+//}

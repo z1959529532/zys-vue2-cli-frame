@@ -1,0 +1,68 @@
+/**
+ *  全局css变量定义，需要和下半部分的less变量定义的字段值一致
+ */
+
+//---------------------------通用颜色----------------------
+@zh-primary: #409EFF;
+
+@zh-bg: #23456D;
+@zh-bg-deep: #1A395C;
+@zh-bg-reverse: rgba(255, 255, 255, 0.7);
+
+@zh-line: rgba(255, 255, 255, .1);
+
+//---------------------------字体颜色----------------------
+@zh-text: rgba(255, 255, 255, 0.8);
+@zh-text-deep: #FFFFFF;
+@zh-text-weak: fade(@zh-text, 80%);
+@zh-text-reverse: #000000;
+
+
+//----------------------------尺寸------------------------
+@zh-line-width: 0.1rem;
+@zh-border-radius: 0.3rem;
+
+@zh-margin: 1.4rem;
+@zh-margin-small: 1rem;
+@zh-margin-mid: 1.2rem;
+@zh-margin-big: 1.8rem;
+@zh-margin-large: 2rem;
+
+//---------------------------滚动条------------------------
+@zh-scroll-thumb: rgba(0, 0, 0, 0.3);
+@zh-scroll-thumb-width: 0.6rem;
+
+
+/**
+ *  less变量对应的css变量,在项目内使用
+ */
+:root {
+    //---------------------------通用颜色----------------------
+    --zh-primary: @zh-primary;
+
+    --zh-bg: @zh-bg;
+    --zh-bg-deep: @zh-bg-deep;
+    --zh-bg-reverse: @zh-bg-reverse;
+
+    --zh-line: @zh-line;
+
+    //---------------------------字体颜色----------------------
+    --zh-text: @zh-text;
+    --zh-text-deep: @zh-text-deep;
+    --zh-text-weak: @zh-text-weak;
+    --zh-text-reverse: @zh-text-reverse;
+
+    //----------------------------尺寸------------------------
+    --zh-line-width: @zh-line-width;
+    --zh-border-radius: @zh-border-radius;
+
+    --zh-margin: @zh-margin;
+    --zh-margin-small: @zh-margin-small;
+    --zh-margin-mid: @zh-margin-mid;
+    --zh-margin-big: @zh-margin-big;
+    --zh-margin-large: @zh-margin-large;
+
+    //---------------------------滚动条------------------------
+    --zh-scroll-thumb: @zh-scroll-thumb;
+    --zh-scroll-thumb-width: @zh-scroll-thumb-width;
+}

@@ -1,0 +1,76 @@
+/**
+ *  flex布局
+ */
+
+.zh-flex {
+    display: flex !important;
+    display: -webkit-flex !important;
+}
+
+//flex布局 水平 两端对齐
+.zh-flex-space-between {
+    .zh-flex;
+    justify-content: space-between !important;
+}
+
+//flex水平 居中排列
+.zh-flex-center-v {
+    .zh-flex;
+    align-items: center !important;
+}
+
+//flex水平 居中对齐
+.zh-flex-center-h {
+    .zh-flex;
+    justify-content: center !important;
+}
+
+//flex布局水平 垂直居中
+.zh-flex-center {
+    .zh-flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+//flex布局 水平 居右
+.zh-flex-end {
+    .zh-flex;
+    justify-content: flex-end;
+}
+
+//flex布局的子项 weight:1 等分空间
+.zh-mixin-flex-item-weight(@n:1) {
+    flex-grow: @n !important;
+    flex-basis: 0 !important;
+}
+
+//flex布局的子项 weight:1 等分空间
+.zh-flex-item-weight-1 {
+    .zh-mixin-flex-item-weight(1)
+}
+
+//flex布局的子项 weight:2
+.zh-flex-item-weight-2 {
+    .zh-mixin-flex-item-weight(2)
+}
+
+//flex布局的子项 weight:3
+.zh-flex-item-weight-3 {
+    .zh-mixin-flex-item-weight(3)
+}
+
+//flex布局的子项 weight:4
+.zh-flex-item-weight-4 {
+    .zh-mixin-flex-item-weight(4)
+}
+
+//flex布局的子项 weight:5
+.zh-flex-item-weight-5 {
+    .zh-mixin-flex-item-weight(5)
+}
+
+//flex布局的子项 weight:6
+.zh-flex-item-weight-6 {
+    .zh-mixin-flex-item-weight(6)
+}
+
