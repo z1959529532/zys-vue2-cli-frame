@@ -17,7 +17,7 @@ Vue.use(ElementUI);
 // import 'ant-design-vue/dist/reset.css';
 // Vue.use(Antd)
 
-// ts代码不识别的声明
+// ts代码-不识别的声明
 import Declare from './declare'
 // 所有全局指令
 // import './directives/allDirectives'
